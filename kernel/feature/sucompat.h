@@ -25,3 +25,12 @@ void ksu_sucompat_init(void);
 void ksu_sucompat_exit(void);
 
 #endif
+
+int ksu_handle_post_execveat_sucompat(int *fd, struct filename **filename_ptr,
+                                      void *argv_user, void *envp_user,
+                                      int *flags, int *retval)
+{
+    return 0;
+}
+
+#endif
